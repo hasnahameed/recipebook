@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>login form</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script type="text/javascript" src="logScr.js"></script>
+    
+
+<body>
+
+    <div class="box">
+    <img src="user.jpg" class="user">    
+        <h1>Login Here</h1>
+        
+         <form name="myForm"  onsubmit="return vfun()" action="login.php" method="POST"  autocomplete="off">
+            <p>username:</p>
+            <input type="text" name="username" placeholder="Enter username" required="">
+
+            <p>Password:</p>
+            <input type="password" name="password3" placeholder="Enter password" required="">
+
+            <div id="errorBox"></div>
+
+            <input type="submit" name="login" value="LogIn">
+
+            
+
+            <br><br>
+            <a href="registerFrom.html">Register for new account?</a>
+            <br><br>
+            <a href="index.html">Go back</a>
+         </form>
+        
+    </div>
+
+    
+</body>
+</head>
+</html>
