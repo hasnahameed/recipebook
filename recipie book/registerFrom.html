@@ -12,22 +12,22 @@
     <img src="user.jpg" class="user">    
         <h1>Register Here</h1>
         
-         <form name="myForm2" onsubmit="return vfun1()">
+         <form name="myForm2" onsubmit="return vfun1()" action="register.php" method="POST">
             <p>Username:</p>
-            <input type="text" name="username1" placeholder="Enter username">
+            <input type="text" name="username1" placeholder="Enter username" required="">
 
             <p>email:</p>
-            <input type="Email" name="email1" placeholder="Enter email">
+            <input type="Email" name="email1" placeholder="Enter email" required="">
 
             <p>Password:</p>
-            <input type="password" name="password1" placeholder="Enter password" >
+            <input type="password" name="password1" placeholder="Enter password" required="" >
 
             <p>Password:</p>
-            <input type="password" name="password2" placeholder="Re-Enter password" >
+            <input type="password" name="password2" placeholder="Re-Enter password" required="" >
 
             <div id="errorBox"></div>
 
-            <input type="submit" name="" value="LogIn">
+            <input type="submit" name="register" value="Register">
             
 
             <br><br>

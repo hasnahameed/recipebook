@@ -47,8 +47,9 @@ section {
     
 }
 
-#recipe {
-    height: 300vh;
+#recipe{
+    height: auto;
+    width: 100%;
 }
 /****home****/
 #home{
@@ -105,7 +106,7 @@ section {
     font-weight: 700;
 }
 #recipe h1{
-    font-size: 100px;
+    font-size: 80px;
 
 }
 #recipe img{
@@ -145,7 +146,7 @@ section {
 }
 
 p{
-    color: #f49126;
+    color: #dd8425;
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -460,7 +461,7 @@ line-height: 35px;
 .categories button {
     padding: 10px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #17477a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -473,7 +474,7 @@ line-height: 35px;
 
 .recipe-item {
     display: inline-block;
-    width: 200px;
+    width: 220px;
     margin: 15px;
     text-align: center;
     font-size: 15px;
@@ -494,7 +495,7 @@ button {
     margin-top: 10px;
     padding: 10px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #0a9411;
     color: white;
     border: none;
     border-radius: 5px;
@@ -502,7 +503,7 @@ button {
 
 .recipe-details {
     padding: 20px;
-    background-color: #530404;
+    background-color:rgba(54, 2, 2, 0.7);
     border-radius: 10px;
     text-align: center;
     font-size: 15px;
@@ -525,3 +526,23 @@ button {
     color: #604844;
 }
 
+
+
+
+
+
+
+
+#view_recipe{
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999; /* On top of other content */
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 70%;
+    background-color: rgba(54, 2, 2, 0.7); /* Black background with transparency */
+    padding: 0;
+    color: #fff;
+
+}

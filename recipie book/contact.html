@@ -61,20 +61,23 @@
             <h1>CONTACT US</h1>
 
                   
-                   <form name="myForm3" class="box" onsubmit="return vfun2()">
-                      <p>Recipe Name:</p>
+                   <form name="myForm3" class="box" onsubmit="return vfun2()"  action="contact.php" method="POST">
+                     
+                     
+                     <p>Recipe Name:</p>
                       <input type="text" name="Recipe" placeholder="Enter name">
           
                       <p>email:</p>
                       <input type="Email" name="email2" placeholder="Enter email">
+
           
                       <p>Ingredients:</p>
                       <textarea name="Ingredients" placeholder="Enter Ingredients" ></textarea>
 
-                      <p>Ingredients:</p>
+                      <p>Instructions:</p>
                       <textarea name="Instructions" placeholder="Enter Instructions" ></textarea>
           
-                      
+                     
           
                       <div id="errorBox"></div>
           

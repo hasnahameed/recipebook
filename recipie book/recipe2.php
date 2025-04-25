@@ -30,7 +30,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="recipe.html">Recipe</a>
+                <a class="nav-link" href="recipe2.php">Recipe</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -238,6 +238,46 @@
       </div>
 
 
+
+      
+        
+      <div class="container mt-5">
+    <h2 class="mb-4 text-center">🍽️ Recipe List</h2>
+    <div class="row">
+        <?php
+        $conn = new mysqli('localhost', 'root', '', 'project');
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT id, Recipe, email2 FROM conta"; // Note the addition of 'id'
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo '
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                  
+                        <div class="card-body">
+                            <h5 class="card-title">' . htmlspecialchars($row["Recipe"]) . '</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Submitted by: ' . htmlspecialchars($row["email2"]) . '</h6>
+                            
+                             
+                            <a href="view_recipe.php?id=' . $row["id"] . '" target="_blank" class="btn btn-primary mt-3">View Recipe</a>
+                        </div>
+                    </div>
+                </div>';
+            }
+        } else {
+            echo "<p>No recipes found.</p>";
+        }
+
+        $conn->close();
+        ?>
+    </div>
+</div>
 
       
       
