@@ -61,5 +61,5 @@ This README.md file gives users a clear understanding of what your project does,
 Get smarter responses, upload files and images, and more.
 
 Log in
-click here to view the live website http://127.0.0.1:5500/index.html
+click here to view the live website http://localhost/recipie%20book/index.html
  recipebook
